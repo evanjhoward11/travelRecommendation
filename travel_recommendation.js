@@ -28,7 +28,7 @@ function search() {
             results.forEach((result) => {
                 const ul = document.createElement("ul");
                 ul.innerHTML = `
-                    <li><img src=${result.imageURL}></li>
+                    <li><img src=${result.imageUrl}></li>
                     <li>${result.name}</li>
                     <li>${result.description}</li>
                 `;
