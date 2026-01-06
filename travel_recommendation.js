@@ -1,3 +1,6 @@
+const btnSearch = document.getElementById("btnSearch");
+const btnClear = document.getElementById("btnClear");
+
 function search() {
     const apiURL = "travel_recommendation_api.json";
     const input = document.getElementById("destinationInput").value.toLowerCase();
@@ -36,10 +39,10 @@ function search() {
         });
 }
 
-function clear() {
-    divElem = document.getElementById("results");
+function clearResults() {
+    const divElem = document.getElementById("results");
     divElem.innerHTML = "";
 }
 
 btnSearch.addEventListener('click', search);
-btnClear.addEventListener('click', clear)
+btnClear.addEventListener('click', clearResults)
